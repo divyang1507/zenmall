@@ -24,7 +24,7 @@ const Links = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center w-full  ">
+    <div className="flex justify-between items-center  ">
       <div className="flex justify-center items-center gap-4">
         {links.map((e) => (
           <Link
@@ -40,7 +40,9 @@ const Links = () => {
         ))}
       </div>
       <div className="flex items-center">
-        <FaShoppingCart />
+       <Link href={"/cart"}>
+       <FaShoppingCart />
+       </Link>
       </div>
     </div>
   );
