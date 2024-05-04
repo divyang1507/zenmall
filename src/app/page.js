@@ -1,4 +1,4 @@
-import { Cardswiper } from "@/components/Cardswiper";
+import  Cardswiper  from "@/components/Cardswiper";
 import Category from "@/components/Category";
 import ProductsCard from "@/components/ProductsCard";
 
@@ -23,7 +23,6 @@ export default function Home() {
             <span>Todays</span>
           </div>
           <Cardswiper />
-          <ProductsCard />
         </div>
       </div>
     </>
