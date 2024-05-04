@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import { FaShoppingCart } from "react-icons/fa";
+
 const Links = () => {
   const pathname = usePathname();
   const links = [
@@ -24,13 +24,13 @@ const Links = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center  ">
+    <div className="flex gap-12 w-full items-center  ">
       <div className="flex justify-center items-center gap-4">
         {links.map((e) => (
           <Link
             className={`${
-              pathname === e.path ? "bg-red-400" : "bg-yellow-400"
-            } hover:bg-slate-400 p-4`}
+              pathname === e.path ? "font-semibold border-b-2 border-black" : ""
+            } hover:font-semibold p-4`}
             href={e.path}
             key={e.title}
           >
@@ -39,11 +39,7 @@ const Links = () => {
           </Link>
         ))}
       </div>
-      <div className="flex items-center">
-       <Link href={"/cart"}>
-       <FaShoppingCart />
-       </Link>
-      </div>
+     
     </div>
   );
 };
