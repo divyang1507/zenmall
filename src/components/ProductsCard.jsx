@@ -35,7 +35,9 @@ const ProductsCard = () => {
             <div className="text-gray-500 text-sm">(8.5)</div>
           </div>
         </div>
-        <button className="bg-amber-400 py-1 mt-3  px-1 rounded-md">Buy Now</button>
+        <button className="bg-amber-400 py-1 mt-3  px-1 rounded-md">
+          Buy Now
+        </button>
       </div>
     </div>
   );

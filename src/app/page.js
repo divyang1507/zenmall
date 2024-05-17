@@ -1,9 +1,11 @@
-import  Cardswiper  from "@/components/Cardswiper";
+import Cardswiper from "@/components/Cardswiper";
 import Category from "@/components/Category";
 import ProductsCard from "@/components/ProductsCard";
 
-export default function Home() {
-  
+
+const Home = async () => {
+
+  // mongodb+srv://divhp1507:div123@cluster0.ibgcqc9.mongodb.net/
   return (
     <>
       <div className="mx-8 pt-8 md:mx-16 lg:mx-32 ">
@@ -15,6 +17,7 @@ export default function Home() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla,
             quae eius quas itaque corporis animi nobis fugit impedit doloremque
             error quos laboriosam explicabo temporibus molestias?
+            <div></div>
           </div>
         </div>
         <div>
@@ -27,4 +30,5 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+export default Home;
